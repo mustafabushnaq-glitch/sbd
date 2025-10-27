@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System;
+using System.Numerics;
 
 Console.WriteLine("inpet your name :");
 string name1 = Console.ReadLine();
@@ -35,18 +36,26 @@ Console.WriteLine($"{name1} = {ipf1}    {name2} = {ipf2}");
 //else if (ipf2 > ipf1) {
 //    Console.WriteLine($"{name2} is the winner!");
 //}
-
+Double x = ipf1 * bw2 - total2; 
+Double y = ipf2 * bw1 - total1;
 bool isWinner = ipf1 > ipf2;
 
 switch (isWinner)
 {
     case true:
         Console.WriteLine($"{name1} is the winner!");
+        
+       Console.WriteLine($"the diferant is {x}");
         break;
         case false: 
         Console.WriteLine($"{name2} is the winner!");
+        Console.WriteLine($"the diferant is {y}");
         break;
+
 }
+
+Console.WriteLine("mustafa gym king");    
+
 
 
 
